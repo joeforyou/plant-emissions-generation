@@ -229,6 +229,15 @@ function createViz(level, category, param) {
                     ffuel: d["PLFUELCT"],
                     cap: d["CAPFACT"]
                 };
+            } else if (level.name == "Generator") {
+                return {
+                    // Generator
+                    level: d[level.code],
+                    measure: strToInt(d[param.code]),
+                    genID: d["GENID"],
+                    state: d["PSTATABB"],
+                    oris: d["ORISPL"]
+                }
             }
         },function(data) {
             var max = d3.max( data, function(d) { return d.measure; });
@@ -253,9 +262,11 @@ function createViz(level, category, param) {
                     // Display a bar graph comparing other parameters in same category
                 }
             } else if (level.name == "Plant") {
-                displayDotMap(param, min, max)
+                displayDotMap(data, level, param, min, max)
                 displayKPI(data, max)
                 displayPlantBarGraph(data, max)
+            } else if (level.name == "Generator") {
+                displayDotMap(data, level, param, min, max)
             }
 
             $("#paramSelect").on("change", function(e){
@@ -724,8 +735,7 @@ function displayBarGraph(data, max) {
 
 }
 
-function displayDotMap(param, min, max){
-
+function displayDotMap(data, level, param, min, max){
     $("#viz").hide();
     $("#kpi").hide();
 
@@ -761,66 +771,79 @@ function displayDotMap(param, min, max){
             .style("fill", "rgb(213,222,217)")
     });
 
-    d3.json("/data/plant.json", function(json){
-        //var maxCircleRadius = d3.min([this.scales.y.bandwidth(), this.scales.x.step()]) / 2;
-        var maxCircleArea = Math.PI * Math.pow(20, 2)
+    d3.json("/data/Plant.json", function(json){
+        if(level.name == "Plant") {
+            //var maxCircleRadius = d3.min([this.scales.y.bandwidth(), this.scales.x.step()]) / 2;
+            //var maxCircleArea = Math.PI * Math.pow(20, 2)
 
-        var rscale = d3.scale.linear()
-            .domain([min,max])
-            .range([0,25])
-        
-        svg.selectAll("circle")
-            .data(json.features)
-            .enter()
-            .append("circle")
-            .on("mouseover", function(d) {
-                document.getElementById("kpi").firstChild.innerHTML = "<h1>" + numberWithCommas(d.properties[param.code]) + "</h1><h4>" + units + " (current selection)</h4>"
-                tooltip.transition()    
-                .duration(200)    
-                .style("opacity", .9);    
-                tooltip.html(
-                    "<strong>" + d.properties["PNAME"] + "</strong><br>" +
-                    " (ORISPL: "+ d.properties["ORISPL"] + ")<br>"+
-                    numberWithCommas(d.properties[param.code]) + " " + units + "<br>" +
-                    "State: " + d.properties["PSTATABB"]
-                )  
-                .style("left", (d3.event.pageX) + "px")   
-                .style("top", (d3.event.pageY - 100) + "px")
-            })
-            .on("mouseout", function(d) {
-                document.getElementById("kpi").firstChild.innerHTML = "<h1>--</h1><h4>" + units + " (current selection)</h4>" 
-                tooltip.transition()    
-                .duration(500)    
-                .style("opacity", 0); 
-            })
-            .attr("cx", function(d){ 
-                if(projection(d.geometry.coordinates) ) { 
-                    return projection(d.geometry.coordinates)[0] 
-                }
-            })
-            .attr("cy", function(d){ 
-                if(projection(d.geometry.coordinates)) { 
-                    return projection(d.geometry.coordinates)[1]
-                }
-            })
-            .attr("r", function(d){
-                if(d.properties[param.code] == 0){
-                    return 0;
-                } else {
-                    return rscale(typeCheck(d.properties[param.code]))
-                }
-            })
-            .attr("fill","steelblue")
-            .style("opacity","0.7")
+            var rscale = d3.scale.linear()
+                .domain([min,max])
+                .range([0,25])
             
-            document.getElementById("kpi").style = "text-align: right; margin-top: 100px;"
+            svg.selectAll("circle")
+                .data(json.features)
+                .enter()
+                .append("circle")
+                .on("mouseover", function(d) {
+                    document.getElementById("kpi").firstChild.innerHTML = "<h1>" + numberWithCommas(d.properties[param.code]) + "</h1><h4>" + units + " (current selection)</h4>"
+                    tooltip.transition()    
+                    .duration(200)    
+                    .style("opacity", .9);    
+                    tooltip.html(
+                        "<strong>" + d.properties["PNAME"] + "</strong><br>" +
+                        " (ORISPL: "+ d.properties["ORISPL"] + ")<br>"+
+                        numberWithCommas(d.properties[param.code]) + " " + units + "<br>" +
+                        "State: " + d.properties["PSTATABB"]
+                    )  
+                    .style("left", (d3.event.pageX) + "px")   
+                    .style("top", (d3.event.pageY - 100) + "px")
+                })
+                .on("mouseout", function(d) {
+                    document.getElementById("kpi").firstChild.innerHTML = "<h1>--</h1><h4>" + units + " (current selection)</h4>" 
+                    tooltip.transition()    
+                    .duration(500)    
+                    .style("opacity", 0); 
+                })
+                .attr("cx", function(d){ 
+                    if(projection(d.geometry.coordinates) ) { 
+                        return projection(d.geometry.coordinates)[0] 
+                    }
+                })
+                .attr("cy", function(d){ 
+                    if(projection(d.geometry.coordinates)) { 
+                        return projection(d.geometry.coordinates)[1]
+                    }
+                })
+                .attr("r", function(d){
+                    if(d.properties[param.code] == 0){
+                        return 0;
+                    } else {
+                        return rscale(typeCheck(d.properties[param.code]))
+                    }
+                })
+                .attr("fill","steelblue")
+                .style("opacity","0.7")
+                
+                document.getElementById("kpi").style = "text-align: right; margin-top: 100px;"
+                
+                $("#viz").removeClass("col-md-6")
+                $("#kpi").removeClass("col-md-6")
+                $("#viz").addClass("col-md-9")
+                $("#kpi").addClass("col-md-3")
+                $("#viz").show();
+                $("#kpi").show();
+        } else if (level.name == "Generator"){
+            var _json = json
             
-            $("#viz").removeClass("col-md-6")
-            $("#kpi").removeClass("col-md-6")
-            $("#viz").addClass("col-md-9")
-            $("#kpi").addClass("col-md-3")
-            $("#viz").show();
-            $("#kpi").show();
+            for (var i = 0; i < data.length; i += 1){
+                //console.log(data[i].level)
+                for (var j = 0; j < _json.features.length; j += 1) {
+                    //console.log(_json.features[i].properties.PNAME)
+                }
+            }
+            
+        }
+
                     
     });
 

@@ -50,6 +50,7 @@
     {
       "name": "Generator",
       "parent": "eGRID data",
+      "code": "PNAME",
       "children": [{
         "name": "Generation",
         "parent": "Generator",
