@@ -1,5 +1,5 @@
 /* On mouse hover, lighten state color */
-path:hover {
+path.map:hover {
 	fill-opacity: .7;
 }
 
@@ -14,16 +14,40 @@ div.tooltip {
   border: 1px solid black;        
   pointer-events: none;     
 }
-           
-.axis path, .axis line {
-/*	fill: none;
-*//*	stroke: none;*/
-	shape-rendering: crispEdges;
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+.axis path {
+    fill: none;
+}
+
+.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
 }
 
 .axis text {
- 	fill: #000;
-	font-size: 12px;
+    fill: #000;
+    font-size: 12px;
 }
 text.legendTitle {
     font-weight: bold;
@@ -35,6 +59,97 @@ text.legendTitle {
     margin: 0 0 0 50;
 }
 
-#selectParameter {
-  margin-left: 250px;
+.bar {
+    fill: steelblue;
+  }
+  
+.barAxis text {
+font: 10px sans-serif;
+}
+
+.barAxis path,
+.axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.x.barAxis path {
+display: none;
+}
+/* On mouse hover, lighten bar color */
+rect:hover {
+	fill-opacity: .7;
+}
+div.barTooltip { 
+    position: absolute;     
+    text-align: center;
+    vertical-align: center;    
+    width: 100px;          
+    height: 40px;         
+    padding: 2px;       
+    background: #fff; 
+    border: 1px solid black;        
+    pointer-events: none;     
+  }
+
+#viz {
+    display: inline-block;
+}
+#chart {
+    display: inline-block;
+}
+
+  #kpi {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+  }
+
+  #menu {
+      display: inline-block;
+      vertical-align: top;
+      overflow-y: auto;
+  }
+  button{
+    margin: 13px 12px 12px 10px;
+  }
+  #paramSelect {
+      width: 200px;
+  }
+  .dataLevel, .categoryLevel {
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      font-size: 1.5em;
+  }
+  #levelSelect, #categorySelect, #parameterSelect {
+      text-align: center;
+  }
+  .parameterLevel {
+      white-space: normal;
+      width: 300px;
+      height: 50px;
+  }
+  #estimatedLosses\28 MWh\29, #totalDisposition\28 MWh\29, #directUse\28 MWh\29, #gridGrossLoss\5b EstimatedLosses\2f \28 TotalDisposition-DirectUse\29 \5d {
+      white-space: normal;
+  }
+  div.dotTooltip { 
+    position: absolute;     
+    text-align: center;
+    vertical-align: center;    
+    width: 200px;          
+    height: 100px;         
+    padding: 2px;       
+    background: #fff; 
+    border: 1px solid black;        
+    pointer-events: none;
+    cursor: text;   
+  }
+circle:hover {
+    fill-opacity: .5;
+}
+
+.barAxis line {
+    stroke: black;
 }

@@ -1,0 +1,3627 @@
+{
+  "name": "eGRID data",
+  "parent": "null",
+  "children": [{
+      "name": "Unit",
+      "parent": "eGRID data",
+      "code": "SEQUNT16",
+      "children": [{
+          "name": "Emissions",
+          "parent": "Unit",
+          "children": [{
+              "name": "Unadjusted annual NOx emissions (tons)",
+              "parent": "Emissions",
+              "code": "NOXAN"
+            },
+            {
+              "name": "Unadjusted ozone season NOx emissions (tons)",
+              "parent": "Emissions",
+              "code": "NOXOZ"
+            },
+            {
+              "name": "Unadjusted annual SO2 emissions (tons)",
+              "parent": "Emissions",
+              "code": "SO2AN"
+            },
+            {
+              "name": "Unadjusted annual CO2 emissions (tons)",
+              "parent": "Emissions",
+              "code": "CO2AN"
+            }
+          ]
+        },
+        {
+          "name": "Heat Input",
+          "parent": "Unit",
+          "children": [{
+              "name": "Unadjusted annual heat input (MMBtu)",
+              "parent": "Heat Input",
+              "code": "HTIAN"
+            },
+            {
+              "name": "Unadjusted ozone season heat input (MMBtu)",
+              "parent": "Heat Input",
+              "code": "HTIOZ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Generator",
+      "parent": "eGRID data",
+      "children": [{
+        "name": "Generation",
+        "parent": "Generator",
+        "children": [{
+            "name": "Annual net generation (MWh)",
+            "parent": "Generation",
+            "code": "GENNTAN"
+          },
+          {
+            "name": "Ozone season net generation (MWh)",
+            "parent": "Generation",
+            "code": "GENNTOZ"
+          },
+          {
+            "name": "Nameplate capacity (MW)",
+            "parent": "Generation",
+            "code": "NAMEPCAP"
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Plant",
+      "parent": "eGRID data",
+      "code": "PNAME",
+      "children": [{
+          "name": "Generation",
+          "parent": "Plant",
+          "children": [
+            {
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation",
+              "code": "NAMEPCAP"
+            },
+            {
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENACL"
+            },
+            {
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAOL"
+            },
+            {
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAGS"
+            },
+            {
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENANC"
+            },
+            {
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAHY"
+            },
+            {
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENABM"
+            },
+            {
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAWI"
+            },
+            {
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENASO"
+            },
+            {
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAGT"
+            },
+            {
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAOF"
+            },
+            {
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENAOP"
+            },
+            {
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENATN"
+            },
+            {
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENATR"
+            },
+            {
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENATH"
+            },
+            {
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENACY"
+            },
+            {
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation",
+              "code": "PLGENACN"
+            }
+          ]
+        },
+        {
+          "name": "Heat Input",
+          "parent": "Plant",
+          "children": [{
+              "code": "USETHRMO",
+              "name": "CHP useful thermal output (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "PLHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "PLHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "PLHTIANT",
+              "name": "Total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "PLHTIOZT",
+              "name": "Total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "UNHTI",
+              "name": "Unadjusted annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "UNHTIOZ",
+              "name": "Unadjusted ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "UNHTIT",
+              "name": "Unadjusted total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "UNHTIOZT",
+              "name": "Unadjusted total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Heat Rate",
+          "parent": "Plant",
+          "children": [{
+            "name": "Nominal heat rate (Btu/kWh)",
+            "code": "PLHTRT",
+            "parent": "Heat Rate"
+          }]
+        },
+        {
+          "name": "Emissions",
+          "parent": "Plant",
+          "children": [{
+              "name": "Annual NOx emissions (tons)",
+              "code": "PLNOXAN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Ozone season NOx emissions (tons)",
+              "code": "PLNOXOZ",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual SO2 emissions (tons)",
+              "code": "PLSO2AN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual CO2 emissions (tons)",
+              "code": "PLCO2AN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual CH4 emissions (lbs)",
+              "code": "PLCH4AN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual N2O emissions (lbs)",
+              "code": "PLN2OAN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "code": "PLCO2EQA",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Annual Hg emissions (lbs)",
+              "code": "PLHGAN",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual NOx emissions (tons)",
+              "code": "UNNOX",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted ozone season NOx emissions (tons)",
+              "code": "UNNOXOZ",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual SO2 emissions (tons)",
+              "code": "UNSO2",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual CO2 emissions (tons)",
+              "code": "UNCO2",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual CH4 emissions (lbs)",
+              "code": "UNCH4",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual N2O emissions (lbs)",
+              "code": "UNN2O",
+              "parent": "Emissions"
+            },
+            {
+              "name": "Unadjusted annual Hg emissions (lbs)",
+              "code": "UNHG",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "Plant",
+          "children": [{
+              "code": "PLNOXRTA",
+              "name": "Annual NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLNOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLSO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLCO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLCH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLHGRTA",
+              "name": "Annual Hg total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLNOXRA",
+              "name": "Annual NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLNOXRO",
+              "name": "Ozone season NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLSO2RA",
+              "name": "Annual SO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLCO2RA",
+              "name": "Annual CO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLHGRA",
+              "name": "Annual Hg input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLNOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLNOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLSO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLCO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLCH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "PLHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "Plant",
+          "children": [{
+              "code": "PLCLPR",
+              "name": "Coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLOLPR",
+              "name": "Oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLGSPR",
+              "name": "Gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLNCPR",
+              "name": "Nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLHYPR",
+              "name": "Hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLBMPR",
+              "name": "Biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLWIPR",
+              "name": "Wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLSOPR",
+              "name": "Solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLGTPR",
+              "name": "Geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLOFPR",
+              "name": "Other fossil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLOPPR",
+              "name": "Other unknown / purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLTNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLTRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLTHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLCYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "PLCNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "State",
+      "parent": "eGRID data",
+      "code": "PSTATABB",
+      "children": [{
+          "name": "Heat Input",
+          "parent": "State",
+          "children": [{
+              "code": "STHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "STHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "STHTIANT",
+              "name": "Total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "STHTIOZT",
+              "name": "Total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Generation",
+          "parent": "State",
+          "children": [{
+              "code": "NAMEPCAP",
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENACL",
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAOL",
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAGS",
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENANC",
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAHY",
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENABM",
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAWI",
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENASO",
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAGT",
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAOF",
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENAOP",
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENATN",
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENATR",
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENATH",
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENACY",
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STGENACN",
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STNGENAN",
+              "name": "Annual net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "STNGENOZ",
+              "name": "Ozone season net generation (MWh)",
+              "parent": "Generation"
+            }
+          ]
+        },
+        {
+          "name": "Emissions",
+          "parent": "State",
+          "children": [{
+              "code": "STNOXAN",
+              "name": "Annual NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STNOXOZ",
+              "name": "Ozone season NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STSO2AN",
+              "name": "Annual SO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STCO2AN",
+              "name": "Annual CO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STCH4AN",
+              "name": "Annual CH4 emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STN2OAN",
+              "name": "Annual N2O emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STCO2EQA",
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "STHGAN",
+              "name": "Annual Hg emissions (lbs)",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "State",
+          "children": [{
+              "code": "STNOXRTA",
+              "name": "Annual NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STSO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STHGRTA",
+              "name": "Annual Hg total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNOXRA",
+              "name": "Annual NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNOXRO",
+              "name": "Ozone season NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STSO2RA",
+              "name": "Annual SO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCO2RA",
+              "name": "Annual CO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STHGRA",
+              "name": "Annual Hg input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STSO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCNOXRT",
+              "name": "Annual NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STONOXRT",
+              "name": "Annual NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGNOXRT",
+              "name": "Annual NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSNXRT",
+              "name": "Annual NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCNXORT",
+              "name": "Ozone season NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STONXORT",
+              "name": "Ozone season NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGNXORT",
+              "name": "Ozone season NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSNORT",
+              "name": "Ozone season Nox fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCSO2RT",
+              "name": "Annual SO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STOSO2RT",
+              "name": "Annual SO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGSO2RT",
+              "name": "Annual SO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSS2RT",
+              "name": "Annual SO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCCO2RT",
+              "name": "Annual CO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STOCO2RT",
+              "name": "Annual CO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGCO2RT",
+              "name": "Annual CO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSC2RT",
+              "name": "Annual CO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCHGRT",
+              "name": "Annual Hg coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSHGRT",
+              "name": "Annual Hg fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCNOXR",
+              "name": "Annual NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STONOXR",
+              "name": "Annual NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGNOXR",
+              "name": "Annual NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSNXR",
+              "name": "Annual NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCNXOR",
+              "name": "Ozone season NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STONXOR",
+              "name": "Ozone season NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGNXOR",
+              "name": "Ozone season NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSNOR",
+              "name": "Ozone season NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCSO2R",
+              "name": "Annual SO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STOSO2R",
+              "name": "Annual SO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGSO2R",
+              "name": "Annual SO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSS2R",
+              "name": "Annual SO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STCCO2R",
+              "name": "Annual CO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STOCO2R",
+              "name": "Annual CO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STGCO2R",
+              "name": "Annual CO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSC2R",
+              "name": "Annual Hg coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STFSHGR",
+              "name": "Annual Hg fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBNOX",
+              "name": "Annual NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBNXO",
+              "name": "Ozone season NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBSO2",
+              "name": "Annual SO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBCO2",
+              "name": "Annual CO2 non-baseload  output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBCH4",
+              "name": "Annual CH4 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBN2O",
+              "name": "Annual N2O non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "STNBHG",
+              "name": "Annual Hg non-baseload  output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "State",
+          "children": [{
+              "code": "STCLPR",
+              "name": "Coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STOLPR",
+              "name": "Oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STGSPR",
+              "name": "Gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STNCPR",
+              "name": "Nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STHYPR",
+              "name": "Hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STBMPR",
+              "name": "Biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STWIPR",
+              "name": "Wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STSOPR",
+              "name": "Solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STGTPR",
+              "name": "Geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STOFPR",
+              "name": "Other fossil  generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STOPPR",
+              "name": "Other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STTNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STTRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STTHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STCYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "STCNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Balancing Authority",
+      "parent": "eGRID data",
+      "code":"BACODE",
+      "children": [{
+          "name": "Heat Input",
+          "parent": "Balancing Authority",
+          "children": [{
+              "code": "BAHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "BAHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "BAHTIANT",
+              "name": "Total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "BAHTIOZT",
+              "name": "Total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Generation",
+          "parent": "Balancing Authority",
+          "children": [{
+              "code": "BANGENAN",
+              "name": "Annual net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BANGENOZ",
+              "name": "Ozone season net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NAMEPCAP",
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENACL",
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAOL",
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAGS",
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENANC",
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAHY",
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENABM",
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAWI",
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENASO",
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAGT",
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAOF",
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENAOP",
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENATN",
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENATR",
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENATH",
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENACY",
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "BAGENACN",
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation"
+            }
+          ]
+        },
+        {
+          "name": "Emissions",
+          "parent": "Balancing Authority",
+          "children": [{
+              "code": "BANOXAN",
+              "name": "Annual NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BANOXOZ",
+              "name": "Ozone season NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BASO2AN",
+              "name": "Annual SO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BACO2AN",
+              "name": "Annual CO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BACH4AN",
+              "name": "Annual CH4 emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BAN2OAN",
+              "name": "Annual N2O emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BACO2EQA",
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "BAHGAN",
+              "name": "Annual Hg emissions (lbs)",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "Balancing Authority",
+          "children": [{
+              "code": "BANOXRTA",
+              "name": "Annual NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BASO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAHGRTA",
+              "name": "Annual Hg total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANOXRA",
+              "name": "Annual NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANOXRO",
+              "name": "Ozone season NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BASO2RA",
+              "name": "Annual SO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACO2RA",
+              "name": "Annual CO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAHGRA",
+              "name": "Annual Hg input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BASO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACNOXRT",
+              "name": "Annual NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAONOXRT",
+              "name": "Annual NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGNOXRT",
+              "name": "Annual NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSNXRT",
+              "name": "Annual NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACNXORT",
+              "name": "Ozone season NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAONXORT",
+              "name": "Ozone season NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGNXORT",
+              "name": "Ozone season NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSNORT",
+              "name": "Ozone season NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACSO2RT",
+              "name": "Annual SO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAOSO2RT",
+              "name": "Annual SO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGSO2RT",
+              "name": "Annual SO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSS2RT",
+              "name": "Annual SO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACCO2RT",
+              "name": "Annual CO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAOCO2RT",
+              "name": "Annual CO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGCO2RT",
+              "name": "Annual CO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSC2RT",
+              "name": "Annual CO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACHGRT",
+              "name": "Annual Hg coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSHGRT",
+              "name": "Annual Hg fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACNOXR",
+              "name": "Annual NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAONOXR",
+              "name": "Annual NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGNOXR",
+              "name": "Annual NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSNXR",
+              "name": "Annual NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACNXOR",
+              "name": "Ozone season NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAONXOR",
+              "name": "Ozone season NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGNXOR",
+              "name": "Ozone season NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSNOR",
+              "name": "Ozone season NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACSO2R",
+              "name": "Annual SO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAOSO2R",
+              "name": "Annual SO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGSO2R",
+              "name": "Annual SO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSS2R",
+              "name": "Annual SO2  fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACCO2R",
+              "name": "Annual CO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAOCO2R",
+              "name": "Annual CO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAGCO2R",
+              "name": "Annual CO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSC2R",
+              "name": "Annual CO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BACHGR",
+              "name": "Annual Hg coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BAFSHGR",
+              "name": "Annual Hg fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBNOX",
+              "name": "Annual NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBNXO",
+              "name": "Ozone season NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBSO2",
+              "name": "Annual SO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBCO2",
+              "name": "Annual CO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBCH4",
+              "name": "Annual CH4 non-baseload output emission rate (lb/GWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBN2O",
+              "name": "Annual N2O non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "BANBHG",
+              "name": "Annual Hg non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "Balancing Authority",
+          "children": [{
+              "code": "BACLPR",
+              "name": "Coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAOLPR",
+              "name": "Oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAGSPR",
+              "name": "Gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BANCPR",
+              "name": "Nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAHYPR",
+              "name": "Hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BABMPR",
+              "name": "Biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAWIPR",
+              "name": "Wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BASOPR",
+              "name": "Solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAGTPR",
+              "name": "Geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAOFPR",
+              "name": "Other fossil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BAOPPR",
+              "name": "Other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BATNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BATRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BATHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BACYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "BACNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subregion",
+      "parent": "eGRID data",
+      "code": "SUBRGN",
+      "children": [{
+          "name": "Heat Input",
+          "parent": "Subregion",
+          "children": [{
+              "code": "SRHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "SRHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "SRHTIANT",
+              "name": "Total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "SRHTIOZT",
+              "name": "Total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Generation",
+          "parent": "Subregion",
+          "children": [{
+              "code": "NAMEPCAP",
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNGENAN",
+              "name": "Annual net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNGENOZ",
+              "name": "Ozone season net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENACL",
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAOL",
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAGS",
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENANC",
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAHY",
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENABM",
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAWI",
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENASO",
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAGT",
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAOF",
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENAOP",
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENATN",
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENATR",
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENATH",
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENACY",
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRGENACN",
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNCL",
+              "name": "Annual nonbaseload coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNOL",
+              "name": "Annual nonbaseload oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNGS",
+              "name": "Annual nonbaseload gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNNC",
+              "name": "Annual nonbaseload nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNHY",
+              "name": "Annual nonbaseload hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNBM",
+              "name": "Annual nonbaseload biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNWI",
+              "name": "Annual nonbaseload wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNSO",
+              "name": "Annual nonbaseload solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNGT",
+              "name": "Annual nonbaseload geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNOF",
+              "name": "Annual nonbaseload other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "SRNBGNOP",
+              "name": "Annual nonbaseload other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            }
+          ]
+        },
+        {
+          "name": "Emissions",
+          "parent": "Subregion",
+          "children": [{
+              "code": "SRNOXAN",
+              "name": "Annual NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRNOXOZ",
+              "name": "Ozone season NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRSO2AN",
+              "name": "Annual SO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRCO2AN",
+              "name": "Annual CO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRCH4AN",
+              "name": "Annual CH4 emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRN2OAN",
+              "name": "Annual N2O emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRCO2EQA",
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "SRHGAN",
+              "name": "Annual Hg emissions (lbs)",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "Subregion",
+          "children": [{
+              "code": "SRNOXRTA",
+              "name": "Annual NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRSO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRHGRTA",
+              "name": "Annual Hg total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNOXRA",
+              "name": "Annual NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNOXRO",
+              "name": "Ozone season NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRSO2RA",
+              "name": "Annual SO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCO2RA",
+              "name": "Annual CO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRHGRA",
+              "name": "Annual Hg input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRSO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCNOXRT",
+              "name": "Annual NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRONOXRT",
+              "name": "Annual NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGNOXRT",
+              "name": "Annual NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSNXRT",
+              "name": "Annual NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCNXORT",
+              "name": "Ozone season NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRONXORT",
+              "name": "Ozone season NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGNXORT",
+              "name": "Ozone season NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSNORT",
+              "name": "Ozone season NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCSO2RT",
+              "name": "Annual SO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROSO2RT",
+              "name": "Annual SO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGSO2RT",
+              "name": "Annual SO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSS2RT",
+              "name": "Annual SO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCCO2RT",
+              "name": "Annual CO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROCO2RT",
+              "name": "Annual CO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGCO2RT",
+              "name": "Annual CO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSC2RT",
+              "name": "Annual CO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCCH4RT",
+              "name": "Annual CH4 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROCH4RT",
+              "name": "Annual CH4 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGCH4RT",
+              "name": "Annual CH4 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFCH4RT",
+              "name": "Annual CH4 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCN2ORT",
+              "name": "Annual N2O coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRON2ORT",
+              "name": "Annual N2O oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGN2ORT",
+              "name": "Annual N2O gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFN2ORT",
+              "name": "Annual N2O fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCHGRT",
+              "name": "Annual Hg coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSHGRT",
+              "name": "Annual Hg fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCNOXR",
+              "name": "Annual NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRONOXR",
+              "name": "Annual NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGNOXR",
+              "name": "Annual NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSNXR",
+              "name": "Annual NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCNXOR",
+              "name": "Ozone season NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRONXOR",
+              "name": "Ozone season NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGNXOR",
+              "name": "Ozone season NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSNOR",
+              "name": "Ozone season NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCSO2R",
+              "name": "Annual SO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROSO2R",
+              "name": "Annual SO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGSO2R",
+              "name": "Annual SO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSS2R",
+              "name": "Annual SO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCCO2R",
+              "name": "Annual CO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROCO2R",
+              "name": "Annual CO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGCO2R",
+              "name": "Annual CO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSC2R",
+              "name": "Annual CO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCCH4R",
+              "name": "Annual CH4 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SROCH4R",
+              "name": "Annual CH4 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGCH4R",
+              "name": "Annual CH4 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFCH4R",
+              "name": "Annual CH4 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCN2OR",
+              "name": "Annual N2O coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRON2OR",
+              "name": "Annual N2O oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRGN2OR",
+              "name": "Annual N2O gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFN2OR",
+              "name": "Annual N2O fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRCHGR",
+              "name": "Annual Hg coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRFSHGR",
+              "name": "Annual Hg fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBNOX",
+              "name": "Annual NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBNXO",
+              "name": "Ozone season NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBSO2",
+              "name": "Annual SO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBCO2",
+              "name": "Annual CO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBCH4",
+              "name": "Annual CH4 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBN2O",
+              "name": "Annual N2O non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBC2ER",
+              "name": "Annual CO2e non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "SRNBHG",
+              "name": "Annual Hg non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "Subregion",
+          "children": [{
+              "code": "SRCLPR",
+              "name": "coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SROLPR",
+              "name": "oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRGSPR",
+              "name": "gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNCPR",
+              "name": "nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRHYPR",
+              "name": "hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRBMPR",
+              "name": "biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRWIPR",
+              "name": "wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRSOPR",
+              "name": "solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRGTPR",
+              "name": "geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SROFPR",
+              "name": "other fossil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SROPPR",
+              "name": "other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRTNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRTRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRTHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRCYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRCNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBCLPR",
+              "name": "nonbaseload coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBOLPR",
+              "name": "nonbaseload oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBGSPR",
+              "name": "nonbaseload gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBNCPR",
+              "name": "nonbaseload nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBHYPR",
+              "name": "nonbaseload hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBBMPR",
+              "name": "nonbaseload biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBWIPR",
+              "name": "nonbaseload wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBSOPR",
+              "name": "nonbaseload solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBGTPR",
+              "name": "nonbaseload geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBOFPR",
+              "name": "nonbaseload other fossil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "SRNBOPPR",
+              "name": "nonbaseload other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NERC",
+      "parent": "eGRID data",
+      "code": "NERC",
+      "children": [{
+          "name": "Heat Input",
+          "parent": "NERC",
+          "children": [{
+              "code": "NRHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "NRHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "NRHTIANT",
+              "name": "NERC region total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "NRHTIOZT",
+              "name": "NERC region total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Generation",
+          "parent": "NERC",
+          "children": [{
+              "code": "NAMEPCAP",
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRNGENAN",
+              "name": "Annual net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRNGENOZ",
+              "name": "Ozone season net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENACL",
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAOL",
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAGS",
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENANC",
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAHY",
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENABM",
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAWI",
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENASO",
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAGT",
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAOF",
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENAOP",
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENATN",
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENATR",
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENATH",
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENACY",
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "NRGENACN",
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation"
+            }
+          ]
+        },
+        {
+          "name": "Emissions",
+          "parent": "NERC",
+          "children": [{
+              "code": "NRNOXAN",
+              "name": "Annual NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRNOXOZ",
+              "name": "Ozone season NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRSO2AN",
+              "name": "Annual SO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRCO2AN",
+              "name": "Annual CO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRCH4AN",
+              "name": "Annual CH4 emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRN2OAN",
+              "name": "Annual N2O emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRCO2EQA",
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "NRHGAN",
+              "name": "Annual Hg emissions (lbs)",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "NERC",
+          "children": [{
+              "code": "NRNOXRTA",
+              "name": "Annual NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRSO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRHGRTA",
+              "name": "Annual Hg total output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNOXRA",
+              "name": "Annual NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNOXRO",
+              "name": "Ozone season NOx input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRSO2RA",
+              "name": "Annual SO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCO2RA",
+              "name": "Annual CO2 input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRHGRA",
+              "name": "Annual Hg input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRSO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/GWh)",
+              "parent": ""
+            },
+            {
+              "code": "NRN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCNOXRT",
+              "name": "Annual NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRONOXRT",
+              "name": "Annual NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGNOXRT",
+              "name": "Annual NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSNXRT",
+              "name": "Annual NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCNXORT",
+              "name": "Ozone season NOx coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRONXORT",
+              "name": "Ozone season NOx oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGNXORT",
+              "name": "Ozone season NOx gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSNORT",
+              "name": "Ozone season NOx fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCSO2RT",
+              "name": "Annual SO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NROSO2RT",
+              "name": "Annual SO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGSO2RT",
+              "name": "Annual SO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSS2RT",
+              "name": "Annual SO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCCO2RT",
+              "name": "Annual CO2 coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NROCO2RT",
+              "name": "Annual CO2 oil output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGCO2RT",
+              "name": "Annual CO2 gas output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSC2RT",
+              "name": "Annual CO2 fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCHGRT",
+              "name": "Annual Hg coal output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSHGRT",
+              "name": "Annual Hg fossil fuel output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCNOXR",
+              "name": "Annual NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRONOXR",
+              "name": "Annual NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGNOXR",
+              "name": "Annual NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSNXR",
+              "name": "Annual NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCNXOR",
+              "name": "Ozone season NOx coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRONXOR",
+              "name": "Ozone season NOx oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGNXOR",
+              "name": "Ozone season NOx gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSNOR",
+              "name": "Ozone season NOx fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCSO2R",
+              "name": "Annual SO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NROSO2R",
+              "name": "Annual SO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGSO2R",
+              "name": "Annual SO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSS2R",
+              "name": "Annual SO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCCO2R",
+              "name": "Annual CO2 coal input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NROCO2R",
+              "name": "Annual CO2 oil input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRGCO2R",
+              "name": "Annual CO2 gas input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSC2R",
+              "name": "Annual CO2 fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRCHGR",
+              "name": "Annual Hg coal input emission rate (lb/BBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRFSHGR",
+              "name": "Annual Hg fossil fuel input emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBNOX",
+              "name": "Annual NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBNXO",
+              "name": "Ozone season NOx non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBSO2",
+              "name": "Annual SO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBCO2",
+              "name": "Annual CO2 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBCH4",
+              "name": "Annual CH4 non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBN2O",
+              "name": "Annual N2O non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "NRNBHG",
+              "name": "Annual Hg non-baseload output emission rate (lb/MWh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "NERC",
+          "children": [{
+              "code": "NRCLPR",
+              "name": "Coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NROLPR",
+              "name": "Oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRGSPR",
+              "name": "Gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRNCPR",
+              "name": "Nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRHYPR",
+              "name": "Hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRBMPR",
+              "name": "Biomass generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRWIPR",
+              "name": "Wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRSOPR",
+              "name": "Solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRGTPR",
+              "name": "Geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NROFPR",
+              "name": "Other fossil  generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NROPPR",
+              "name": "Other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRTNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRTRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRTHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRCYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "NRCNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "US",
+      "parent": "eGRID data",
+      "code": "US",
+      "children": [{
+          "name": "Heat Input",
+          "parent": "US",
+          "children": [{
+              "code": "USHTIAN",
+              "name": "Annual heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "USHTIOZ",
+              "name": "Ozone season heat input from combustion (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "USHTIANT",
+              "name": "Total annual heat input (MMBtu)",
+              "parent": "Heat Input"
+            },
+            {
+              "code": "USHTIOZT",
+              "name": "Total ozone season heat input (MMBtu)",
+              "parent": "Heat Input"
+            }
+          ]
+        },
+        {
+          "name": "Generation",
+          "parent": "US",
+          "children": [{
+              "code": "NAMEPCAP",
+              "name": "Nameplate capacity (MW)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USNGENAN",
+              "name": "Annual net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USNGENOZ",
+              "name": "Ozone season net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENACL",
+              "name": "Annual coal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAOL",
+              "name": "Annual oil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAGS",
+              "name": "Annual gas net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENANC",
+              "name": "Annual nuclear net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAHY",
+              "name": "Annual hydro net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENABM",
+              "name": "Annual biomass net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAWI",
+              "name": "Annual wind net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENASO",
+              "name": "Annual solar net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAGT",
+              "name": "Annual geothermal net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAOF",
+              "name": "Annual other fossil net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENAOP",
+              "name": "Annual other unknown/ purchased fuel net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENATN",
+              "name": "Annual total nonrenewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENATR",
+              "name": "Annual total renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENATH",
+              "name": "Annual total nonhydro renewables net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENACY",
+              "name": "Annual total combustion net generation (MWh)",
+              "parent": "Generation"
+            },
+            {
+              "code": "USGENACN",
+              "name": "Annual total noncombustion net generation (MWh)",
+              "parent": "Generation"
+            }
+          ]
+        },
+        {
+          "name": "Emissions",
+          "parent": "US",
+          "children": [{
+              "code": "USNOXAN",
+              "name": "Annual NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USNOXOZ",
+              "name": "Ozone season NOx emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USSO2AN",
+              "name": "Annual SO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USCO2AN",
+              "name": "Annual CO2 emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USCH4AN",
+              "name": "Annual CH4 emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USN2OAN",
+              "name": "Annual N2O emissions (lbs)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USCO2EQA",
+              "name": "Annual CO2 equivalent emissions (tons)",
+              "parent": "Emissions"
+            },
+            {
+              "code": "USHGAN",
+              "name": "Annual Hg emissions (lbs)",
+              "parent": "Emissions"
+            }
+          ]
+        },
+        {
+          "name": "Emission Rate",
+          "parent": "US",
+          "children": [{
+              "code": "USNOXRTA",
+              "name": "Annual NOx total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNOXRTO",
+              "name": "Ozone season NOx total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USSO2RTA",
+              "name": "Annual SO2 total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCO2RTA",
+              "name": "Annual CO2 total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCH4RTA",
+              "name": "Annual CH4 total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USN2ORTA",
+              "name": "Annual N2O total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USC2ERTA",
+              "name": "Annual CO2 equivalent total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USHGRTA",
+              "name": "Annual Hg total output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNOXRA",
+              "name": "Annual NOx input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNOXRO",
+              "name": "Ozone season NOx input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USSO2RA",
+              "name": "Annual SO2 input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCO2RA",
+              "name": "Annual CO2 input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USHGRA",
+              "name": "Annual Hg input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNOXCRT",
+              "name": "Annual NOx combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNOXCRO",
+              "name": "Ozone season NOx combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USSO2CRT",
+              "name": "Annual SO2 combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCO2CRT",
+              "name": "Annual CO2 combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCH4CRT",
+              "name": "Annual CH4 combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USN2OCRT",
+              "name": "Annual N2O combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USHGCRT",
+              "name": "Annual Hg combustion output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCNOXRT",
+              "name": "Annual NOx coal output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USONOXRT",
+              "name": "Annual NOx oil output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGNOXRT",
+              "name": "Annual NOx gas output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSNXRT",
+              "name": "Annual NOx fossil fuel output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCNXORT",
+              "name": "Ozone season NOx coal output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USONXORT",
+              "name": "Ozone season NOx oil output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGNXORT",
+              "name": "Ozone season NOx gas output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSNORT",
+              "name": "Ozone season NOx fossil fuel output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCSO2RT",
+              "name": "Annual SO2 coal output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USOSO2RT",
+              "name": "Annual SO2 oil output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGSO2RT",
+              "name": "Annual SO2 gas output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSS2RT",
+              "name": "Annual SO2 fossil fuel output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCCO2RT",
+              "name": "Annual CO2 coal output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USOCO2RT",
+              "name": "Annual CO2 oil output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGCO2RT",
+              "name": "Annual CO2 gas output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSC2RT",
+              "name": "Annual CO2 fossil fuel output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCHGRT",
+              "name": "Annual Hg coal output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSHGRT",
+              "name": "Annual Hg fossil fuel output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCNOXR",
+              "name": "Annual NOx coal input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USONOXR",
+              "name": "Annual NOx oil input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGNOXR",
+              "name": "Annual NOx gas input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSNXR",
+              "name": "Annual NOx fossil fuel input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCNXOR",
+              "name": "Ozone season NOx coal input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USONXOR",
+              "name": "Ozone season NOx oil input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGNXOR",
+              "name": "Ozone season NOx gas input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSNOR",
+              "name": "Ozone season NOx fossil fuel input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCSO2R",
+              "name": "Annual SO2 coal input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USOSO2R",
+              "name": "Annual SO2 oil input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGSO2R",
+              "name": "Annual SO2 gas input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSS2R",
+              "name": "Annual SO2 fossil fuel input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCCO2R",
+              "name": "Annual CO2 coal input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USOCO2R",
+              "name": "Annual CO2 oil input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USGCO2R",
+              "name": "Annual CO2 gas input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSC2R",
+              "name": "Annual CO2 fossil fuel input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USCHGR",
+              "name": "Annual Hg coal input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USFSHGR",
+              "name": "Annual Hg fossil fuel input emission rate emission rate (lb/MMBtu)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBNOX",
+              "name": "Annual NOx non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBNXO",
+              "name": "Ozone season NOx non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBSO2",
+              "name": "Annual SO2 non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBCO2",
+              "name": "Annual CO2 non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBCH4",
+              "name": "Annual CH4 non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBN2O",
+              "name": "Annual N2O non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBC2E",
+              "name": "Annual CO2e non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            },
+            {
+              "code": "USNBHG",
+              "name": "Annual Hg non-baseload output emission rate (lb/Mwh)",
+              "parent": "Emission Rate"
+            }
+          ]
+        },
+        {
+          "name": "Resource Mix",
+          "parent": "US",
+          "children": [{
+              "code": "USCLPR",
+              "name": "Coal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USOLPR",
+              "name": "Oil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USGSPR",
+              "name": "Gas generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USNCPR",
+              "name": "Nuclear generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USHYPR",
+              "name": "Hydro generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USBMPR",
+              "name": "Biomass  generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USWIPR",
+              "name": "Wind generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USSOPR",
+              "name": "Solar generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USGTPR",
+              "name": "Geothermal generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USOFPR",
+              "name": "Other fossil generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USOPPR",
+              "name": "Other unknown/ purchased fuel generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USTNPR",
+              "name": "Total nonrenewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USTRPR",
+              "name": "Total renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USTHPR",
+              "name": "Total nonhydro renewables generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USCYPR",
+              "name": "Total combustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            },
+            {
+              "code": "USCNPR",
+              "name": "Total noncombustion generation percent (resource mix)",
+              "parent": "Resource Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gross Grid Loss",
+      "parent": "eGRID data",
+      "code": "REGION",
+      "children": [{
+          "code": "ESTLOSS",
+          "name": "Estimated losses (MWh)",
+          "parent": "Gross Grid Loss"
+        },
+        {
+          "code": "TOTDISP",
+          "name": "Total disposition (MWh)",
+          "parent": "Gross Grid Loss"
+        },
+        {
+          "code": "DIRCTUSE",
+          "name": "Direct use (MWh)",
+          "parent": "Gross Grid Loss"
+        },
+        {
+          "code": "GGRSLOSS",
+          "name": "Grid gross loss [Estimated losses/(Total disposition - Direct use)]",
+          "parent": "Gross Grid Loss"
+        }
+      ]
+    }
+  ]
+}
