@@ -52,7 +52,7 @@ $("#reset").hide();
 $("#levelSelect").hide();
 $("#categorySelect").hide();
 $("#parameterSelect").hide();
-d3.json("/data/menu.json", function(error, data){
+d3.json("data/menu.json", function(error, data){
     if(error) { console.log(error); };
 
     levelsHTML = [];
@@ -217,7 +217,7 @@ function createViz(level, category, param) {
         // selection = d;
         units = findUnits(param.name);
         // Load CSV
-        d3.csv("/data/egrid2016_"+camelize(level.name.toLowerCase())+".csv", function(d){
+        d3.csv("data/egrid2016_"+camelize(level.name.toLowerCase())+".csv", function(d){
             if(["Subregion","NERC","State","US","Gross Grid Loss"].includes(level.name)){
                 return {
                     // one level, one parameter: state, subregion, nerc, us, ggl
@@ -394,7 +394,7 @@ function displayMap(data, max) {
             .attr("class", "tooltip")       
             .style("opacity", 0);
         // Load GeoJSON data and merge with states data
-        d3.json("/data/"+camelize(selectedLevel.name.toLowerCase())+".json",function(json) {
+        d3.json("data/"+camelize(selectedLevel.name.toLowerCase())+".json",function(json) {
         // Loop through each state data value in the .csv file
         var _json = json;
 
@@ -768,7 +768,7 @@ function displayDotMap(data, level, param, min, max){
         .attr("class", "dotTooltip")       
         .style("opacity", 0);
 
-    d3.json("/data/state.json", function(outlineJSON){
+    d3.json("data/state.json", function(outlineJSON){
         svg.selectAll("path")
             .data(outlineJSON.features)
             .enter()
@@ -779,7 +779,7 @@ function displayDotMap(data, level, param, min, max){
             .style("fill", "rgb(213,222,217)")
     });
 
-    d3.json("/data/plant.json", function(json){
+    d3.json("data/plant.json", function(json){
         if(level.name == "Plant") {
             //var maxCircleRadius = d3.min([this.scales.y.bandwidth(), this.scales.x.step()]) / 2;
             //var maxCircleArea = Math.PI * Math.pow(20, 2)
