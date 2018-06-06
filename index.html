@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>eGRID</title>
+    <title>Plant Emissions and Generation</title>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-1.7.1.js"
@@ -174,9 +174,25 @@ d3.json("/data/menu.json", function(error, data){
             $("#changeParameter").hide();
             clearViz()
             $("#levelSelect").show();
+
         })
+
     });
+
+hideStuff();
+
 });
+
+function hideStuff() {
+    $("#plant").trigger("click")
+    $(".categoryLevel").each(function(e){
+        console.log( $(this)[0].id)
+        if($(this)[0].id != "emissions" && $(this)[0].id != "generation") {
+            $(this).hide();
+        }
+    });
+    $("#breadcrumbs").hide();
+}
 
 var selection;
 var units;
@@ -195,7 +211,7 @@ function reset(){
 
 function createViz(level, category, param) {
         $("#reset").show();
-        $("#breadcrumbs").show();
+        //$("#breadcrumbs").show();
         $("#vizTitle").show();
         $("#changeParameter").show();
         // Get user selections
@@ -870,6 +886,7 @@ function getTopTwenty(arrayData){  //sorting to top 50 function
 $("#reset").on("click", function(){
     reset();
 });
+
 
 </script>
 
