@@ -186,7 +186,6 @@ hideStuff();
 function hideStuff() {
     $("#plant").trigger("click")
     $(".categoryLevel").each(function(e){
-        console.log( $(this)[0].id)
         if($(this)[0].id != "emissions" && $(this)[0].id != "generation") {
             $(this).hide();
         }
@@ -218,7 +217,6 @@ function createViz(level, category, param) {
         // selection = d;
         units = findUnits(param.name);
         // Load CSV
-        console.log(param.code)
         d3.csv("/data/egrid2016_"+camelize(level.name.toLowerCase())+".csv", function(d){
             if(["Subregion","NERC","State","US","Gross Grid Loss"].includes(level.name)){
                 return {
@@ -294,18 +292,15 @@ function createViz(level, category, param) {
                                 newSelection["code"] = level.children[i].code;
                             }
                         }
-                        //console.log(newSelection)
                         clearViz();
                         createViz(selectedLevel, selectedCategory, newSelection);
                     } else{
-                        //console.log(newSelection)
                         for(var i = 0; i < category.children.length; i += 1){
                             if(category.children[i].name == e.currentTarget.value){
                                 newSelection["code"] = category.children[i].code;
-                                console.log(newSelection)
+                                //console.log(newSelection)
                             }
                         }
-                        //console.log(newSelection)
                         clearViz();
                         createViz(selectedLevel, selectedCategory, newSelection);
                     }
@@ -408,16 +403,13 @@ function displayMap(data, max) {
             var dataLevel = data[i].level;
             // Grab data value 
             var dataValue = data[i].measure;
-            //console.log(dataValue)
             // Find the corresponding state inside the GeoJSON
             for (var j = 0; j < _json.features.length; j++)  {
                 var jsonLevel = _json.features[j].properties.name;
-                //console.log(dataLevel)
                 if (dataLevel == jsonLevel) {
                 // Copy the data value into the JSON
                 _json.features[j].properties.units = units;
                 _json.features[j].properties[selectedLevel.code] = dataValue;
-                //console.log(dataValue) 
                 // Stop looking through the JSON
                 break;
                 }
@@ -787,7 +779,7 @@ function displayDotMap(data, level, param, min, max){
             .style("fill", "rgb(213,222,217)")
     });
 
-    d3.json("/data/Plant.json", function(json){
+    d3.json("/data/plant.json", function(json){
         if(level.name == "Plant") {
             //var maxCircleRadius = d3.min([this.scales.y.bandwidth(), this.scales.x.step()]) / 2;
             //var maxCircleArea = Math.PI * Math.pow(20, 2)
